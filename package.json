@@ -1,0 +1,16 @@
+{
+  "name": "NodeExpressMongo",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "a": "^0.4.8",
+    "angular-chart.js": "^0.7.1",
+    "ejs": "*",
+    "express": "3.2.6",
+    "mongodb": "*",
+    "watson-developer-cloud": "~0.9.3"
+  }
+}

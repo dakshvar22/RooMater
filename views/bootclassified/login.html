@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from templatecycle.com/demo/bootRooMater/login.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 18 Jul 2015 12:59:07 GMT -->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"> </script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+ 
+<script src="assets/js/owl.carousel.min.js"></script>
+ 
+<script src="assets/js/form-validation.js"></script>
+ 
+<script src="assets/plugins/jquery.fs.scroller/jquery.fs.scroller.js"></script>
+<script src="assets/plugins/jquery.fs.selecter/jquery.fs.selecter.js"></script>
+ 
+<script src="assets/js/script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.1/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.1/angular-cookies.min.js"></script>    
+ 
+<!--<script type="text/javascript">
+//<![CDATA[
+try{if (!window.CloudFlare) {var CloudFlare=[{verbose:0,p:0,byc:0,owlid:"cf",bag2:1,mirage2:0,oracle:0,paths:{cloudflare:"/cdn-cgi/nexp/dok3v=1613a3a185/"},atok:"1fbeaaebe81d853257a0fa685e1eb6ea",petok:"c529f694ff3b4936e27abcdb10b5e8e2cfc0a421-1437224298-1800",betok:"54c51c93b866123d2e84dc85a6c94773c14d5bda-1437224298-120",zone:"templatecycle.com",rocket:"0",apps:{}}];CloudFlare.push({"apps":{"smarterror":{"swiftype":{"engine_key":""}}}});!function(a,b){a=document.createElement("script"),b=document.getElementsByTagName("script")[0],a.async=!0,a.src="../../../ajax.cloudflare.com/cdn-cgi/nexp/dok3v%3d7e13c32551/cloudflare.min.js",b.parentNode.insertBefore(a,b)}()}}catch(e){};
+//]]>
+</script>-->
+<script src="assets/js/login.js"></script>    
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.html">
+<link rel="shortcut icon" href="assets/ico/favicon.png">
+<title>RooMater</title>
+ 
+<link href="assets/bootstrap/css/bootstrap.css" rel="stylesheet">
+ 
+<link href="assets/css/style.css" rel="stylesheet">
+ 
+<link href="assets/css/owl.carousel.css" rel="stylesheet">
+<link href="assets/css/owl.theme.css" rel="stylesheet">
+ 
+ 
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+<![endif]-->
+ 
+<script>
+    paceOptions = {
+      elements: true
+    };
+</script>
+<script src="assets/js/pace.min.js"></script>
+</head>
+<body ng-app="myApp"> 
+<div id="wrapper" ng-controller="MainCtrl">
+<div class="header">
+<nav class="navbar   navbar-site navbar-default" role="navigation">
+<div class="container">
+<div class="navbar-header">
+<button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+<a href="index.html" class="navbar-brand logo logo-title">
+ 
+<span class="logo-icon"><i class="icon icon-search-1 ln-shadow-logo shape-0"></i> </span> ROOM<span>ATER</span> </a> </div>
+<div class="navbar-collapse collapse">
+<ul class="nav navbar-nav navbar-right">
+<li><a href="login.html">Login</a></li>
+<li><a href="signup.html">Signup</a></li>
+
+</ul>
+</div>
+ 
+</div>
+ 
+</nav>
+</div>
+ 
+<div class="main-container">
+<div class="container">
+<div class="row">
+<div class="col-sm-5 login-box">
+<div class="panel panel-default">
+<div class="panel-intro text-center">
+<h2 class="logo-title">
+ 
+<span class="logo-icon"><i class="icon icon-search-1 ln-shadow-logo shape-0"></i> </span> FIND<span>ROOMATE </span> </h2>
+</div>
+<div class="panel-body">
+<form role="form">
+<div class="form-group">
+<label for="sender-email" class="control-label">Username:</label>
+<div class="input-icon"> <i class="icon-user fa"></i>
+<input id="sender-email" type="text" placeholder="Username" class="form-control email" ng-model="username">
+</div>
+</div>
+<div class="form-group">
+<label for="user-pass" class="control-label" >Password:</label>
+<div class="input-icon"> <i class="icon-lock fa"></i>
+<input type="password" ng-model="password" class="form-control" placeholder="Password" id="user-pass">
+</div>
+</div>
+<div class="form-group">
+<a href = "account-home.html" class="btn btn-primary  btn-block" ng-click="submit()">Submit</a>
+</div>
+</form>
+</div>
+<div class="panel-footer">
+<label class="checkbox pull-left">
+<input type="checkbox" value="1" name="remember" id="remember">
+Keep me logged in </label>
+<p class="text-center pull-right"> <a href="forgot-password.html"> Lost your password? </a> </p>
+<div style=" clear:both"></div>
+</div>
+</div>
+<div class="login-box-btm text-center">
+<p> Don't have an account? <br>
+<a href="signup.html"><strong>Sign Up !</strong> </a> </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+ 
+<div class="footer" id="footer">
+<div class="container">
+<ul class=" pull-left navbar-link footer-nav">
+<li><a href="index.html"> Home </a> <a href="about-us.html"> About us </a> <a href="#"> Terms and Conditions </a> <a href="#"> Privacy Policy </a> <a href="contact.html"> Contact us </a> <a href="faq.html"> FAQ </a>
+</ul>
+<ul class=" pull-right navbar-link footer-nav">
+<li> &copy; 2015 BootRooMater </li>
+</ul>
+</div>
+</div>
+ 
+</div>
+ 
+ 
+ 
+
+</body>
+
+<!-- Mirrored from templatecycle.com/demo/bootRooMater/login.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 18 Jul 2015 12:59:07 GMT -->
+</html>

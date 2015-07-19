@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  ul
+      li 
+        a(href='http://crm-2.mybluemix.net/userlist') Display list of users
+      li
+        a(href='http://localhost:3000/newuser') Add a user
+      li
+        a(href='http://localhost:3000/changeuser') Update a user
+      li
+        a(href='http://localhost:3000/remuser') Delete a user
+  

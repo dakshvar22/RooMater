@@ -1,0 +1,6 @@
+host: roomate
+name: accomodateme
+path: .
+domain: mybluemix.net
+instances: 1
+memory: 512M
